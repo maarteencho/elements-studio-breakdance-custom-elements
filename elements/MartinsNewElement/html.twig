@@ -1,1 +1,9 @@
-Blank Element
+<h3 class='custom-text'>{{ content.section.custom_text }}</h3>
+
+<ul>
+    {% for item in content.another_section.features %}
+        <li>
+            {{ item.feature }}
+        </li>
+    {% endfor %}
+</ul>
