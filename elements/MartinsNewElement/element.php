@@ -86,12 +86,65 @@ class Martinsnewelement extends \Breakdance\Elements\Element
 
     static function designControls()
     {
-        return [];
+        return [c(
+        "colors",
+        "Colors",
+        [c(
+        "color",
+        "Color",
+        [],
+        ['type' => 'color', 'layout' => 'inline'],
+        false,
+        false,
+        [],
+      ), c(
+        "size",
+        "Size",
+        [],
+        ['type' => 'unit', 'layout' => 'inline'],
+        false,
+        false,
+        [],
+      )],
+        ['type' => 'section'],
+        false,
+        false,
+        [],
+      )];
     }
 
     static function contentControls()
     {
-        return [];
+        return [c(
+        "section",
+        "Section",
+        [c(
+        "custom_text",
+        "Custom Text",
+        [],
+        ['type' => 'text', 'layout' => 'vertical'],
+        false,
+        false,
+        [],
+      )],
+        ['type' => 'section', 'layout' => 'vertical'],
+        false,
+        false,
+        [],
+      ), c(
+        "another_section",
+        "Another Section",
+        [getPresetSection(
+      "EssentialElements\\typography",
+      "Typography",
+      "typography",
+       ['type' => 'popout']
+     )],
+        ['type' => 'section', 'layout' => 'vertical'],
+        false,
+        false,
+        [],
+      )];
     }
 
     static function settingsControls()
