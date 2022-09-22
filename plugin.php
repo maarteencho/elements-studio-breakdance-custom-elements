@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Plugin Name: Breakdance Custom Elements
+ * Plugin Name: Martin Elements
  * Plugin URI: https://breakdance.com/
  * Description: ALPHA - NOT TO BE USED IN PRODUCTION
  * Author: Breakdance
